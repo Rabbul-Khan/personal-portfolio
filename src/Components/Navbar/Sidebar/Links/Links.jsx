@@ -1,4 +1,4 @@
-import './links.scss';
+import './Links.scss';
 
 import { motion } from 'framer-motion';
 
