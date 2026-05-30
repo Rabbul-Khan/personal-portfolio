@@ -5,7 +5,7 @@ import { useRef } from 'react';
 
 import portfolioImage from './images/portfolio.jpeg';
 import quotablesImage from './images/quotables.jpeg';
-import todoImage from './images/todo.jpeg';
+import todoImage from './images/todo.png';
 
 const items = [
   {

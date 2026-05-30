@@ -1,6 +1,6 @@
 @import '/src/App.scss';
 
-.intro {
+.experience {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -17,6 +17,9 @@
     padding-bottom: 1rem;
     color: var(--color-orange);
     text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
 
     @include mobile {
       transform: none !important;
@@ -28,20 +31,30 @@
     }
   }
 
-  .textBlock {
+  .titleIcon {
+    width: 0.65rem;
+    height: 0.65rem;
+    border-radius: 999px;
+    border: 2px solid var(--color-orange);
+    display: inline-block;
+  }
+
+  &__card {
     line-height: 1.5rem;
     margin-bottom: 1rem;
     letter-spacing: 0.05rem;
     border-left: 4px solid var(--color-orange);
-    padding: 0.5rem 1rem;
+    padding: 0.75rem 1.25rem;
     position: relative;
     transition: 1s;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
 
     @include mobile {
       line-height: 1.3rem;
       margin-bottom: 0.35rem;
-
-      padding: 0.1rem 0.5rem;
+      padding: 0.5rem 0.75rem;
       border-left: 2.5px solid var(--color-orange);
       transform: none !important;
     }
@@ -51,7 +64,7 @@
       line-height: 1.2rem;
       margin-bottom: 0.35rem;
       letter-spacing: 0;
-      padding: 0.1rem 0.5rem;
+      padding: 0.5rem 0.75rem;
       border-left: 2.5px solid var(--color-orange);
     }
 
@@ -76,55 +89,33 @@
     }
   }
 
-  &__edu-skills {
-    display: flex;
-    gap: 20rem;
+  &__role {
+    font-size: 1.4rem;
+    letter-spacing: 0.08rem;
+    font-weight: 700;
 
-    @include tablet {
-      flex-direction: column;
+    @include mobile {
+      font-size: 1.1rem;
     }
+
+    @include mobile-small {
+      font-size: 0.95rem;
+    }
+  }
+
+  &__company {
+    font-weight: 600;
+    color: var(--color-white);
+  }
+
+  &__meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    opacity: 0.9;
 
     @include mobile {
       gap: 0.5rem;
     }
-
-    .intro__experience {
-      min-width: max-content;
-    }
-
-    .intro__skills {
-      ul {
-        list-style-type: none;
-        display: flex;
-        flex-wrap: wrap;
-        gap: 1rem;
-        color: var(--color-white);
-
-        @include mobile {
-          font-size: 0.75rem;
-        }
-
-        li {
-          border: 1px solid var(--color-orange);
-          border-radius: 0.5rem;
-          padding: 0.5rem 1rem;
-          transition: all 0.2s ease-in-out;
-
-          @include tablet {
-            transform: none !important;
-          }
-
-          &:hover {
-            background-color: var(--color-orange);
-            color: var(--color-dark-blue);
-          }
-        }
-      }
-    }
-  }
-
-  .experienceRole {
-    font-weight: 700;
-    letter-spacing: 0.08rem;
   }
 }

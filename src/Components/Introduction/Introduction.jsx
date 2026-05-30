@@ -3,16 +3,17 @@ import './Introduction.scss';
 import { motion } from 'framer-motion';
 
 const skills = [
-  'HTML',
-  'CSS',
-  'JavaScript',
-  'React',
   'TypeScript',
+  'JavaScript',
+  'Vue.js',
+  'React',
   'NextJs',
+  'Tailwind CSS',
   'Nodejs',
   'Express',
   'MongoDB',
-  'Tailwind CSS',
+  'CSS',
+  'HTML',
   'Sass',
   'Git',
 ];
@@ -59,23 +60,17 @@ const Introduction = () => {
       }}
     >
       <div className="intro__edu-skills">
-        <div className="intro__edu">
-          <motion.h1 variants={textVariants}>Education</motion.h1>
+        <div className="intro__experience">
+          <motion.h1 variants={textVariants}>Experience</motion.h1>
           <div className="textBlock">
+            <div className="experienceRole">Junior Frontend Developer</div>
             <div>
-              <b>MS in Computer Science and Engineering</b>
+              <b>Dhaka Popular Travel</b>
             </div>
             <div>
-              <i>North South University, 2021-2022</i>
+              <i>Jun. 2024 - Current</i>
             </div>
-          </div>
-          <div className="textBlock">
-            <div>
-              <b>BS in Electrical and Electronics Engineering</b>
-            </div>
-            <div>
-              <i>North South University, 2016-2020</i>
-            </div>
+            <div>Dhaka, Bangladesh</div>
           </div>
         </div>
 
@@ -100,6 +95,26 @@ const Introduction = () => {
               );
             })}
           </ul>
+        </div>
+      </div>
+
+      <div className="intro__education">
+        <motion.h1 variants={textVariants}>Education</motion.h1>
+        <div className="textBlock">
+          <div>
+            <b>MS in Computer Science and Engineering</b>
+          </div>
+          <div>
+            <i>North South University, 2021-2022</i>
+          </div>
+        </div>
+        <div className="textBlock">
+          <div>
+            <b>BS in Electrical and Electronics Engineering</b>
+          </div>
+          <div>
+            <i>North South University, 2016-2020</i>
+          </div>
         </div>
       </div>
 
